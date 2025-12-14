@@ -1,0 +1,30 @@
+# --- Build Artifacts (Never Commit) ---
+/target
+**/*.rs.bk
+
+# --- OS Junk ---
+**/*.DS_Store
+Thumbs.db
+.spotlight-V100
+.Trashes
+
+# --- Editor Configs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Testing Artifacts (Crucial for this project) ---
+# Since you test 'npm install' inside this repo, ignore these:
+node_modules/
+package.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --- Environment ---
+.env
+.env.local
+
+# Note: We explicitly KEEP Cargo.lock because this is a Binary Application.
